@@ -1,0 +1,124 @@
+<html>
+<head>
+<style>
+	td{
+		height: 82px;
+		width: 82px;
+		border: 2px dashed red;
+	}
+</style>
+<script>
+
+   // function vakjeVullen(vakjeid){  
+                                      
+       // for(var x = 0 ; x < 5; x++){ 
+           // for(var y= 0 ; y< 6; y++)
+		//var vakjeid = "vakje"+x+y;
+
+      //  var elem = document.getElementById(vakjeid);
+      //  elem.bgColor = 'blue';
+	//	var gespeeld = vakje.getAttribute("ja");
+      
+  
+     //if var gespeeld = "ja";
+    // vakjeid ="vakje"+x+y
+
+      
+      //  vakje.setAttribute("gespeeld");
+
+      function vakjeVullen(vakjeid){ 
+    
+
+    var x=vakjeid[4];        
+
+        for(var y = 5 ; y > -1 ; y--) {
+        
+            var vakjeid = "vakje"+y+x; 
+            var elem = document.getElementById(vakjeid);
+
+            if ((elem.bgColor == 'red' ) && y == 0) {
+                alert("Kolom vol! Selecteer een andere kolom."); 
+            }
+            
+            if (elem.bgColor !== steenKleur1) {
+                   elem.bgColor = 'red'; 
+                   player = speler2;
+                }
+      
+                }   
+
+               
+
+            }
+           
+        
+      
+  
+      
+	
+    
+
+    
+</script>
+</head>
+<body>
+<!--    Tel tot: <input type="number" id="ingevoerd">    -->
+
+<table>
+    <tr>
+        <td id="vakje00" onclick="vakjeVullen(id)"></td>
+        <td id="vakje01" onclick="vakjeVullen(id)"></td>
+        <td id="vakje02" onclick="vakjeVullen(id)"></td>
+        <td id="vakje03" onclick="vakjeVullen(id)"></td>
+        <td id="vakje04" onclick="vakjeVullen(id)"></td>
+        <td id="vakje05" onclick="vakjeVullen(id)"></td>
+        <td id="vakje06" onclick="vakjeVullen(id)"></td>  
+    </tr>
+    <tr>
+        <td id="vakje10" onclick="vakjeVullen(id)"></td>
+        <td id="vakje11" onclick="vakjeVullen(id)"></td>
+        <td id="vakje12" onclick="vakjeVullen(id)"></td>
+        <td id="vakje13" onclick="vakjeVullen(id)"></td>
+        <td id="vakje14" onclick="vakjeVullen(id)"></td>
+        <td id="vakje15" onclick="vakjeVullen(id)"></td>
+        <td id="vakje16" onclick="vakjeVullen(id)"></td>  
+    </tr>
+   <tr>
+        <td id="vakje20" onclick="vakjeVullen(id)"></td>
+        <td id="vakje21" onclick="vakjeVullen(id)"></td>
+        <td id="vakje22" onclick="vakjeVullen(id)"></td>
+        <td id="vakje23" onclick="vakjeVullen(id)"></td>
+        <td id="vakje24" onclick="vakjeVullen(id)"></td>
+        <td id="vakje25" onclick="vakjeVullen(id)"></td>
+        <td id="vakje26" onclick="vakjeVullen(id)"></td> 
+    </tr>
+     <tr>
+        <td id="vakje30" onclick="vakjeVullen(id)"></td>
+        <td id="vakje31" onclick="vakjeVullen(id)"></td>
+        <td id="vakje32" onclick="vakjeVullen(id)"></td>
+        <td id="vakje33" onclick="vakjeVullen(id)"></td>
+        <td id="vakje34" onclick="vakjeVullen(id)"></td>
+        <td id="vakje35" onclick="vakjeVullen(id)"></td>
+        <td id="vakje36" onclick="vakjeVullen(id)"></td>
+    </tr>
+    <tr>
+        <td id="vakje40" onclick="vakjeVullen(id)"></td>
+        <td id="vakje41" onclick="vakjeVullen(id)"></td>
+        <td id="vakje42" onclick="vakjeVullen(id)"></td>
+        <td id="vakje43" onclick="vakjeVullen(id)"></td>
+        <td id="vakje44" onclick="vakjeVullen(id)"></td>
+        <td id="vakje45" onclick="vakjeVullen(id)"></td>
+        <td id="vakje46" onclick="vakjeVullen(id)"></td>
+    </tr>
+    <tr>
+        <td id="vakje50" onclick="vakjeVullen(id)"></td>
+        <td id="vakje51" onclick="vakjeVullen(id)"></td>
+        <td id="vakje52" onclick="vakjeVullen(id)"></td>
+        <td id="vakje53" onclick="vakjeVullen(id)"></td>
+        <td id="vakje54" onclick="vakjeVullen(id)"></td>
+        <td id="vakje55" onclick="vakjeVullen(id)"></td>
+        <td id="vakje56" onclick="vakjeVullen(id)"></td>
+    </tr> 
+</table>
+</body>
+</html>
