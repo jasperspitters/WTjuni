@@ -9,15 +9,21 @@
 </style>
 <script>
 
-   // function vakjeVullen(vakjeid){  
-                                      
+    function vakjeVullen(vakjeid){  
+        var kleur=true                           
        // for(var x = 0 ; x < 5; x++){ 
            // for(var y= 0 ; y< 6; y++)
-		//var vakjeid = "vakje"+x+y;
+		// var vakjeid = "vakje"+x+y;
 
-      //  var elem = document.getElementById(vakjeid);
-      //  elem.bgColor = 'blue';
-	//	var gespeeld = vakje.getAttribute("ja");
+        var elem = document.getElementById(vakjeid);
+        elem.bgColor = 'red';
+	//}
+	//	if(Kleur){elem.bgColor = 'red';
+	//		}
+	//		else{elem.bgColor = 'blue'}
+	//	kleur=!kleur;
+    
+    //	var gespeeld = vakje.getAttribute("ja");
       
   
      //if var gespeeld = "ja";
@@ -26,30 +32,7 @@
       
       //  vakje.setAttribute("gespeeld");
 
-      function vakjeVullen(vakjeid){ 
-    
-
-    var x=vakjeid[4];        
-
-        for(var y = 5 ; y > -1 ; y--) {
-        
-            var vakjeid = "vakje"+y+x; 
-            var elem = document.getElementById(vakjeid);
-
-            if ((elem.bgColor == 'red' ) && y == 0) {
-                alert("Kolom vol! Selecteer een andere kolom."); 
-            }
-            
-            if (elem.bgColor !== steenKleur1) {
-                   elem.bgColor = 'red'; 
-                   player = speler2;
-                }
-      
-                }   
-
-               
-
-            }
+     
            
         
       
